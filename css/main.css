@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: "굴림";
+}
+
+#wrap {
+    width: 100%;
+    height: 700px;
+    /* background: #555; */
+}
+
+.top {
+    width: 100%;
+    height: 600px;
+    /* background-color: #aaa; */
+}
+
+.header {
+    width: 200px;
+    height: 600px;
+    float: left;
+    /* background-color: yellowgreen; */
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.nav {
+    width: 180px;
+    margin: 20px auto 0;
+}
+
+.main {}
+
+.main>li {
+    margin-bottom: 5px;
+}
+
+.main>li>a {
+    border: 1px solid black;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 10px;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main>li:hover>a {
+    background-color: #777;
+}
+
+.sub {
+    display: none;
+}
+
+.sub li {}
+
+.sub li a {
+    border: 1px solid black;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #777;
+    color: white;
+}
+
+.sub li a:hover {
+    background-color: #555;
+}
+
+
+
+
+.contents {
+    width: 400px;
+    height: 600px;
+    float: left;
+    /* background-color: turquoise; */
+}
+
+.notice {
+    height: 250px;
+    padding: 20px;
+    /* background-color: #666; */
+}
+
+.notice h2 {
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.notice ul {
+    border-top: 5px solid green;
+    height: 175px;
+    /* background-color:#f1f1f1 */
+    padding: 5px;
+
+}
+
+.notice ul li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted #ddd;
+}
+
+
+.notice ul li a {
+    display: block;
+    width: 80%;
+    float: left;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice ul li span {
+    float: right;
+}
+
+
+
+
+.gallery {
+    height: 250px;
+    padding: 20px;
+    /* background-color: #999; */
+}
+
+.gallery h2 {
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.gallery ul {
+    border-top: 5px solid red;
+    height: 175px;
+    /* background-color:#f1f1f1 */
+    padding: 5px;
+}
+
+.gallery ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.gallery ul li a {}
+
+.gallery ul li a img {
+    width: 90%;
+}
+
+.gallery ul li a span {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+
+.link {
+    height: 100px;
+    padding: 10px 20px;
+    /* background-color: #aaa */
+}
+
+.link_list {}
+
+.link_list li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.link_list li a {}
+
+.link_list li a img {
+    width: 70%;
+}
+
+.link_list li a span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+.img_slide {
+    width: calc(100% - 600px);
+    height: 600px;
+    float: left;
+    /* background-color: chartreuse; */
+    position: relative;
+    overflow: hidden;
+}
+
+.top_move {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1800px;
+}
+
+.top_move li {
+    width: 100%;
+    height: 600px;
+}
+
+.top_move li img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: violet;
+}
+
+.f_logo {
+    width: 200px;
+    height: 100px;
+    /* background-color: brown; */
+    float: left;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.copy {
+    width: calc(100% - 400px);
+    height: 100px;
+    /* background-color: wheat; */
+    float: left;
+    line-height: 100px;
+    text-indent: 20px;
+}
+
+.family {
+    width: 200px;
+    height: 100px;
+    /* background-color: tomato; */
+    float: left;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.family select {
+    width: 180px;
+    height: 50px;
+}
+
+.pop_bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.popup {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: 10px double black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 120;
+    padding: 20px;
+    display: none;
+
+}
+
+.popup h3{
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+.popup p{
+    padding-top: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+.popup .close{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
